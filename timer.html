@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./timer/template.css">
+		<link rel="icon" href="img/logo.png">
+		<title>CUBE</title>	
+		
+	</head>
+	
+	<body>
+		
+		<page>
+			
+			<header>		
+				<a href="index.html" class="logo"><img src="img/128976.png"></a>
+			</header>
+			
+			<content>
+                <div id="timer">	
+                    <form name=MyForm id="timer_inner">    
+                            <input name=stopwatch size=6 value="00:00:00" class="time">  
+
+                            <input type=button value="Запуск/Остановить" onclick="StartStop()" class="stop"> 
+                    </form>
+                </div>
+	
+			</content>
+			
+			
+			
+		</page>
+		
+<script language="JavaScript" type="text/javascript">
+   
+   var base = 60; 
+   var clocktimer,dateObj,dh,dm,ds,ms; 
+   var readout=''; 
+   var h=1,m=1,tm=1,s=0,ts=0,ms=0,init=0; 
+   
+   
+   function ClearСlock() { 
+	clearTimeout(clocktimer); 
+	h=1;m=1;tm=1;s=0;ts=0;ms=0; 
+	init=0;
+	readout='00:00:00'; 
+	document.MyForm.stopwatch.value=readout; 
+   } 
+   
+   
+   function StartTIME() { 
+	var cdateObj = new Date(); 
+	var t = (cdateObj.getTime() - dateObj.getTime())-(s*1000); 
+	if (t>999) { s++; } 
+	if (s>=(m*base)) { 
+		ts=0; 
+		m++; 
+	} else { 
+		ts=parseInt((ms/100)+s); 
+		if(ts>=base) { ts=ts-((m-1)*base); } 
+	} 
+	if (m>(h*base)) { 
+		tm=1; 
+		h++; 
+	} else { 
+		tm=parseInt((ms/100)+m); 
+		if(tm>=base) { tm=tm-((h-1)*base); } 
+	} 
+	ms = Math.round(t/10); 
+	if (ms>99) {ms=0;} 
+	if (ms==0) {ms='00';} 
+	if (ms>0&&ms<=9) { ms = '0'+ms; } 
+	if (ts>0) { ds = ts; if (ts<10) { ds = '0'+ts; }} else { ds = '00'; } 
+	dm=tm-1; 
+	if (dm>0) { if (dm<10) { dm = '0'+dm; }} else { dm = '00'; } 
+	dh=h-1; 
+	readout =  dm + ':' + ds + ':' + ms; 
+	document.MyForm.stopwatch.value = readout; 
+	clocktimer = setTimeout("StartTIME()",1); 
+   } 
+   
+   
+   function StartStop() { 
+	if (init==0){ 
+		ClearСlock();
+		dateObj = new Date(); 
+		StartTIME(); 
+		init=1; 
+	} else { 
+		clearTimeout(clocktimer);
+		init=0;
+	} 
+   } 
+   </script> 
+	
+
+
+<link rel="stylesheet" href="./timer/editable.css">
+<iframe style="display: none;" src="./timer/saved_resource(2).html"></iframe>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161 161">
+	<rect id="base" width="161" height="161" rx="7.42" style='fill: transparent'/>
+	<rect id="t1" x="10" width="43" height="6" rx="2.32" style="fill: #fff144"/>
+	<rect id="t2" x="59" width="43" height="6" rx="2.32" style="fill: #565656"/>
+	<rect id="t3" x="108" width="43" height="6" rx="2.32" style="fill: #565656"/>
+	<rect id="l1" y="10" width="6" height="43" rx="2.32" style="fill: #565656"/>
+	<rect id="c1" x="10" y="10" width="43" height="43" rx="6.21" style="fill: #565656"/>
+	<rect id="c2" x="59" y="10" width="43" height="43" rx="6.21" style="fill: #fff144"/>
+	<rect id="c3" x="108" y="10" width="43" height="43" rx="6.21" style="fill: #565656"/>
+	<rect id="r1" x="155" y="10" width="6" height="43" rx="2.32" style="fill: #fff144"/>
+	<rect id="l2" y="59" width="6" height="43" rx="2.32" style="fill: #565656"/>
+	<rect id="c4" x="10" y="59" width="43" height="43" rx="6.21" style="fill: #fff144"/>
+	<rect id="c5" x="59" y="59" width="43" height="43" rx="6.21" style="fill: #fff144"/>
+	<rect id="c6" x="108" y="59" width="43" height="43" rx="6.21" style="fill: #fff144"/>
+	<rect id="r2" x="155" y="59" width="6" height="43" rx="2.32" style="fill: #565656"/>
+	<rect id="l3" y="108" width="6" height="43" rx="2.32" style="fill: #565656"/>
+	<rect id="c7" x="10" y="108" width="43" height="43" rx="6.21" style="fill: #fff144"/>
+	<rect id="c8" x="59" y="108" width="43" height="43" rx="6.21" style="fill: #fff144"/>
+	<rect id="c9" x="108" y="108" width="43" height="43" rx="6.21" style="fill: #565656"/>
+	<rect id="r3" x="155" y="108" width="6" height="43" rx="2.32" style="fill: #565656"/>
+	<rect id="b1" x="10" y="155" width="43" height="6" rx="2.32" style="fill: #565656"/>
+	<rect id="b2" x="59" y="155" width="43" height="6" rx="2.32" style="fill: #565656"/>
+	<rect id="b3" x="108" y="155" width="43" height="6" rx="2.32" style="fill: #fff144"/>
+</svg>

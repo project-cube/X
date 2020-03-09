@@ -1,0 +1,50 @@
+#oauth {
+	display: block;
+	position: fixed;
+	right: 0.5em;
+	bottom: 0.5em;
+	z-index: 1000;
+	text-decoration: none;
+	margin: none;
+	padding: none;
+	box-shadow: none;
+}
+
+#oauth img {
+	width: 3em;
+}
+
+data:empty {
+	display: none;
+}
+
+data:not(:empty) {
+	display: block;
+}
+
+data {
+	box-sizing: border-box;
+	position: relative;
+	white-space: pre-wrap;
+	min-height: 1em;
+}
+
+data[contenteditable] {
+	display: block;
+	border: 2px dashed transparent;
+	transition: all 0.1s ease-in-out;
+	outline: none;
+}
+
+data[contenteditable=false]:hover {
+	border: 2px dashed rgba(255, 0, 0, 1);
+	cursor: pointer;
+}
+
+data[contenteditable=true] {
+	border: 2px solid rgba(255, 0, 0, 1);
+}
+
+data[contenteditable].success {
+	border: 2px solid rgba(0, 255, 0, 1);
+}

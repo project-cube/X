@@ -1,0 +1,64 @@
+document.addEventListener("DOMContentLoaded", function() {
+	
+	// load jQuery
+	
+	if (typeof jQuery == "undefined") {
+		var script = document.createElement("script");
+		script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
+		script.onload = runtime;
+		document.getElementsByTagName("head")[0].appendChild(script);	
+	} else runtime();
+	
+});
+
+function runtime() {
+	console.log("runtime.js: ready");
+	
+	// hamburger menu
+	
+	$("#hamburger").on("click", function() {
+		$("nav").toggleClass("active");
+		$("body").toggleClass("active");
+	});
+	
+	// animate children
+	
+	$("animate").each(function() {
+		
+		var index = 0;
+		var images = [];
+		var self = $(this);
+		
+		self.children("img").each(function() {
+			images.push(this.src);
+		});
+		
+		self.children("img").hide();
+		self.append("<img class=animate>");
+		
+		$(".animate", self).not("cube .animate", self).height(
+			$("img:first", self).height()
+		);
+		
+		function animate() {
+			var current = index++ % images.length;
+			$(".animate", self).attr("src", images[current]);
+		}
+		
+		animate();
+		
+		setInterval(animate, 2000);
+	});
+	
+	// detect comments
+	
+	$("data[contenteditable]").contents().filter(function() {
+		return this.nodeType === 8;
+	}).parent().addClass("php");
+}
+
+function preedit(node) {
+	
+	$("animate", node).children("img").show();
+	$("img.animate", node).remove();
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./Fridrich_method(F2L)/template.css">
+		<link rel="icon" href="img/logo.png">
+		<script async="" src="./Fridrich_method(F2L)/analytics.js.Без названия"></script><script src="./Fridrich_method(F2L)/runtime.js.Без названия"></script>
+		<title>CUBE</title>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-21735281-3', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+		
+	<script src="./Fridrich_method(F2L)/embed.js(1).Без названия" data-timestamp="1583680729856"></script><script src="./Fridrich_method(F2L)/jquery.min.js.Без названия"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.91790a929b2fba6bf8967d2204d948d5.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.b9167d06dc7bd01b59d6d6332d6aafa1.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.3e35597ccafc421f5ee35c2229110d93.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"></head>
+	
+	<body>
+		
+		<page>
+			
+			<header>
+				
+				<a href="index.html" class="logo"><img src="img/128976.png"></a>
+				
+				
+				
+			</header>
+			
+			<content>
+				
+				
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s1"><column><h1>Метод Фридрих: алгоритмы F2L</h1>
+First Two Layers переводится как Первые два слоя. После собранного начального креста, чтобы собрать первые два слоя одновременно, нужно поставить 4 пары "сторона-угол" - угловой кусочек содержащий белый цвет + боковой, соответствующий ему. Вариантов расположения этих двух кусочков для каждой пары не много не мало 41.
+
+Придется выучить их все, если хотите собирать первый слой одновременно со вторым. Для каждого случая может быть написан более чем один вариант решения, можно выбрать наиболее для себя удобный. 
+
+Варианты упорядочены по принципу "от простого к сложному", так что можно учить их именно в этом порядке.
+На всех рисунках - красная сторона фронтальная, зеленая - правая.
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s2"><column><img src="./Fridrich_method(F2L)/XRXRRXRRR-XXXGXXXXX-XXXXGGGGG.svg" height="150">
+</column>
+
+<column><b>U R U' R' U' y L' U L</b>
+U R U' R' U' F' U F
+U R U R' U' F' U' F
+</column>
+
+<column><img src="./Fridrich_method(F2L)/XXXRRXRRR-XXXXXXXRX-XGXXGGGGG.svg" height="150"></column>
+
+<column><b>y U' L' U L U y' R U' R'</b>
+U' F' U F U R U' R'
+R' F' R U R U' R' F
+U' R' F R F' R U R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s3"><column>Следующие 4 алгоритма являются базовыми для большинства вариантов F2L. Большинство следующих алгоритмов делаются интуитивно, путем приведения к одному из данных случаев. Поэтому настоятельно рекомендуем их выучить.</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s4"><column><img src="./Fridrich_method(F2L)/XXWRRXRRX-XXXXXXRRX-GGXXGGXGG.svg" height="150">
+</column>
+
+<column><b>U R U' R'</b>
+R' F R F'
+</column>
+
+<column><img src="./Fridrich_method(F2L)/XRRRRXRRX-XXXGXXGXX-WXXXGGXGG.svg" height="150"></column>
+<column><b>y U' L' U L</b>
+F R' F' R</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s5"><column><img src="./Fridrich_method(F2L)/XXRRRXRRX-XXXXXRGXX-WXXXGGXGG.svg" class="left" height="150">
+</column>
+<column><b>R U R'</b>
+y2 L U L'
+y F U F'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXWRRXRRX-XGXXXXRXX-GXXXGGXGG.svg" class="left" height="150"></column>
+<column><b>y L' U' L</b>
+F' U' F
+y' R' U' R</column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s6"><column>Остальные алгоритмы приводятся к тому положению, которые мы уже изучили. Вы можете их запоминать, а можете сразу тренироваться собирать интуитивно.</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s7"><column><img src="./Fridrich_method(F2L)/XXWRRXRRX-XRXXXXRXX-GXXXGGXGG.svg" class="left" height="150">
+U' R U2 R' U2 R U' R'
+U' R U2 R' U' R U2 R'
+U' R U2 R' U R' F R F'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRXRRX-XGXXXXGXX-WXXXGGXGG.svg" class="left" height="150">
+d R' U' R U2 R' U R
+y U L' U' L U2 L' U L
+U' r U' R' U R U r'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s8"><column><img src="./Fridrich_method(F2L)/XXWRRXRRX-XXXXXRRXX-GXXXGGXGG.svg" class="left" height="150">
+U' R U R' U2 R U' R'
+U' R U R' U' R U2 R'
+U' R U R' U R' F R F'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRXRRX-XXXXXGGXX-WXXXGGXGG.svg" class="left" height="150">
+d R' U2 R U2 R' U R
+r' U2 R2 U R2’ U r
+y U L' U2 L U2 L' U L</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s9"><column><img src="./Fridrich_method(F2L)/XXWRRXRRX-XXXXXGRXX-GXXXGGXGG.svg" class="left" height="150">
+U' R U' R' U F' U' F
+U' R U' R' d R' U' R
+F R U R' U' F' R U' R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRXRRX-XRXXXXGXX-WXXXGGXGG.svg" class="left" height="150">
+U' R U R' U R U R'
+U y' R' U R U' y R U R'
+U2 R U' R' U' R U R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s10"><column><img src="./Fridrich_method(F2L)/XRWRRXRRX-XXXGXXRXX-GXXXGGXGG.svg" class="left" height="150">
+y' U R' U R U' R' U' R
+d R' U R U' R' U' R
+M' U' R U R' U' R U2 r'</column>
+
+<column><img src="./Fridrich_method(F2L)/XGRRRXRRX-XXXRXXGXX-WXXXGGXGG.svg" class="left" height="150">
+R U' R' U R U' R' U2 R U' R'
+R' U2 R2 U R2 U R
+U F' U2 F U' R U R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s11"><column><img src="./Fridrich_method(F2L)/XXWRRXRRX-XXXXXXRGX-GRXXGGXGG.svg" class="left" height="150">
+U' R U2 R' U F' U' F
+U' R U2 R' d R' U' R
+y' R U2 R2 U' R2 U' R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRXRRX-XXXXXXGRX-WGXXGGXGG.svg" class="left" height="150">
+U' R U' R' U R U R'
+y L' U2 L U2 F U2 F' U F U' F'
+R U' R' U R U2 R' U2 R U' R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s12"><column><img src="./Fridrich_method(F2L)/XGWRRXRRX-XXXRXXRXX-GXXXGGXGG.svg" class="left" height="150">
+R U R' U2 R U' R' U R U' R'
+y L' U L U2 y' R U R'
+R U2 R' U R U R' U R U' R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRXRRX-XXXXXXGGX-WRXXGGXGG.svg" class="left" height="150">
+R U' R' U2 F' U' F
+R U' R' U2 y L' U' L
+R U' R' U d R' U' R</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s13"><column><img src="./Fridrich_method(F2L)/XXGRRXRRX-XXXXXXWRX-RGXXGGXGG.svg" class="left" height="150">
+R U2 R' U' R U R'
+y L F' L' F L' U L U' L' U L
+U' R U' R' U2 R U2 R2 F R F'</column>
+
+<column><img src="./Fridrich_method(F2L)/XRGRRXRRX-XXXGXXWXX-RXXXGGXGG.svg" class="left" height="150">
+y' R' U2 R U R' U' R
+y L' U2 L U L' U' L
+R' F R F' R U' R' U R U' R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s14"><column><img src="./Fridrich_method(F2L)/XXGRRXRRX-XXXXXRWXX-RXXXGGXGG.svg" class="left" height="150">
+U R U2 R' U R U' R'
+U R U2 R2 F R F'
+R U' R' U R U' R' U R U R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXGRRXRRX-XRXXXXWXX-RXXXGGXGG.svg" class="left" height="150">
+U2 R U R' U R U' R'
+R U' R' U2 R U R'
+y F R U2 R' F'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s15"><column><img src="./Fridrich_method(F2L)/XXGRRXRRX-XGXXXXWXX-RXXXGGXGG.svg" class="left" height="150">
+y' U' R' U2 R U' R' U R
+y U' L' U2 L U' L' U L
+U' R U' R2 F R F' R U' R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXGRRXRRX-XXXXXGWXX-RXXXGGXGG.svg" class="left" height="150">
+F' L' U2 L F
+y' U2 R' U' R U' R' U R
+r U' r' U2 r U r'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s16"><column><img src="./Fridrich_method(F2L)/XGGRRXRRX-XXXRXXWXX-RXXXGGXGG.svg" class="left" height="150">
+R U R' U2 R U R' U' R U R'
+U R U' R' U' R U' R' U R U' R'
+U2 R2 U2 R' U' R U' R2</column>
+
+<column><img src="./Fridrich_method(F2L)/XXGRRXRRX-XXXXXXWGX-RRXXGGXGG.svg" class="left" height="150">
+F U R U' R' F' R U' R'
+U' R U R2 F R F' R U' R'
+y U' L' U L U L' U L U' L' U L</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s17"><column><img src="./Fridrich_method(F2L)/XRXRRXRRW-XXXGXXXXX-XXXXGGRGG.svg" class="left" height="150">
+R' F R F' R' F R F'
+y L' U' L U L' U' L
+y' R' U' R U R' U' R</column>
+
+<column><img src="./Fridrich_method(F2L)/XXXRRXRRW-XXXXXXXRX-XGXXGGRGG.svg" class="left" height="150">
+R U' R' U R U' R'
+R U' R2 F R F'
+y L' U' L U2 F U' F'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s18"><column><img src="./Fridrich_method(F2L)/XRXRRXRRG-XXXGXXXXX-XXXXGGWGG.svg" class="left" height="150">
+R U R' U' F R' F' R
+y L' U L U' L' U L
+y' R' U R U' R' U R</column>
+
+<column><img src="./Fridrich_method(F2L)/XXXRRXRRG-XXXXXXXRX-XGXXGGWGG.svg" class="left" height="150">
+R U R' U' R U R'
+F R' F' R F R' F' R
+y U' L' U' L U2 F U2 F' U F U' F'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s19"><column><img src="./Fridrich_method(F2L)/XXGRRGRRX-XXXXXXWXX-RXXRGGXGG.svg" class="left" height="150">
+U' R' F R F' R U' R'
+R U' R' y L' U2 L
+l F' R U' R' U l'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXWRRGRRX-XXXXXXRXX-GXXRGGXGG.svg" class="left" height="150">
+U' R U R' U F' U' F
+U2 R U R' F R' F' R
+U M' U R U' r' R U' R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s20"><column><img src="./Fridrich_method(F2L)/XXGRRRRRX-XXXXXXWXX-RXXGGGXGG.svg" class="left" height="150">
+R U R' U' R U R' U' R U R'
+U R U' R' U R U' R' U R U' R'
+R2 U R2 U R2 U2 R2</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRGRRX-XXXXXXGXX-WXXRGGXGG.svg" class="left" height="150">
+U2 R' F R F' U2 R U R'
+U F' U' F U' R U R'
+R2 u R U R' U' u' R' U R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s21"><column><img src="./Fridrich_method(F2L)/XXWRRRRRX-XXXXXXRXX-GXXGGGXGG.svg" class="left" height="150">
+U' R U' R' U2 R U' R'
+U' R U' R' U R' F R F'
+R U R' U' R U' R' U R U' R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXRRRRRRX-XXXXXXGXX-WXXGGGXGG.svg" class="left" height="150">
+U R U R' U2 R U R'
+U' R U2 R' U R U R'
+y U L' U L U2 L' U L</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s22"><column><img src="./Fridrich_method(F2L)/XXRRRRRRX-XXXXXXGXX-WXXGGGXGG.svg" class="left" height="150">
+U R U R' U2 R U R'
+U' R U2 R' U R U R'
+y U L' U L U2 L' U L</column>
+
+<column><img src="./Fridrich_method(F2L)/XXXRRGRRG-XXXXXXXXX-XXXRGGWGG.svg" class="left" height="150">
+R U R' U' R U' R' U2 y' R' U' R
+R U F R U R' U' F' R'
+R U' R' F' L' U2 L F</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s23"><column><img src="./Fridrich_method(F2L)/XXXRRGRRW-XXXXXXXXX-XXXRGGRGG.svg" class="left" height="150">
+R U' R' F R U R' U' F' R U' R'
+r U' r' U2 r U r' R U R'
+R F U R U' R' F' U' R'</column>
+
+<column><img src="./Fridrich_method(F2L)/XXXRRRRRG-XXXXXXXXX-XXXGGGWGG.svg" class="left" height="150">
+R U R' U2 R U' R' U R U R'
+R U' R' U R U2 R' U R U' R'
+R U2 R U R' U R U2 R2</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s24"><column><img src="./Fridrich_method(F2L)/XXXRRRRRW-XXXXXXXXX-XXXGGGRGG.svg" class="left" height="150">
+R U R' U' R U2 R' U' R U R'
+R U' R' U' R U R' U2 R U' R'
+R2 U2 R' U' R U' R' U2 R'</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/f2l/s25"><column><h2>Советы как учить F2L</h2>
+
+Сделайте себе шпаргалку, Если перед компьютером, то шпаргалкой может быть эта страница. Берем кубик, запутываем и начинаем собирать. Смотрим, какой случай F2L попался, и делаем его, сначала со шпаргалкой, потом стараться запоминать. И много раз так разбираем и собираем кубик.
+Если учить последовательно, "выучил алгоритм, начал его применять при сборке, через день-два выучил еще один", то так, на наш взгляд, будет мало пользы. Потому что случаев 41, и далеко не всегда вам будет попадаться именно этот выученный случай, придется много раз собрать кубик старым способом, прежде, чем вам попадется этот алгоритм. Получается, что много времени будет тратиться впустую.
+
+Наш совет - переходить сразу на все алгоритмы окончательно и бесповоротно, т.е. сразу резко бросить собирать старым способом, и начать собирать новым. Пусть первое время со шпаргалкой, но так дня за 3-4 вы запомните большинство алгоритмов, и уже шпаргалка будет нужна реже. Таким образом потихоньку запомните все алгоритмы.</column></data>
+				</section>
+				
+			</content>
+			
+			
+			
+		</page>
+		
+	
+	
+
+
+<link rel="stylesheet" href="./Fridrich_method(F2L)/editable.css">
+<iframe style="display: none;" src="./Fridrich_method(F2L)/saved_resource(2).html"></iframe></body></html>

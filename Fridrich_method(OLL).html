@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./Fridrich_method(OLL)/template.css">
+		<link rel="icon" href="img/logo.png">
+		<script async="" src="./Fridrich_method(OLL)/analytics.js.Без названия"></script><script src="./Fridrich_method(OLL)/runtime.js.Без названия"></script>
+		<title>CUBE</title>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-21735281-3', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+		
+	<script src="./Fridrich_method(OLL)/embed.js.Без названия" data-timestamp="1583682178190"></script><script src="./Fridrich_method(OLL)/jquery.min.js.Без названия"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.91790a929b2fba6bf8967d2204d948d5.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.b9167d06dc7bd01b59d6d6332d6aafa1.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.3e35597ccafc421f5ee35c2229110d93.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"></head>
+	
+	<body>
+		
+		<page>
+			
+			<header>
+				
+				<a href="index.html" class="logo"><img src="img/128976.png"></a>
+				
+				
+				
+			</header>
+			
+			<content>
+				
+				
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s1"></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s2"><column><h1>Алгоритмы OLL</h1>
+Orientation of the Last Layer по-простому это сборка желтой шапки, шапки на последней стороне. "Шапка" означает, что вся последняя сторона должна собраться, не разрушив при этом собранных двух слоев. Пояс последней стороны нас сейчас не интересует, он будет на следующем шаге. В Fridrich методе желтая шапка решается за один шаг, но количество вариантов тут немаленькое - 57. Так что, если вы начинающий, то вам пока рановато учить OLL. Можно не сразу учить все 57 алгоритмов, а ограничиться пока первыми семью, т.е. сначала делать желтый крест, а потом один из семи вариантов (шапка в 2 этапа).
+
+Для каждого случая может быть более чем один вариант решения, либо не один вариант начального расположения кубика. На всех рисунках изображен вид сверху, т.е. как мы видим желтую сторону сверху. Нижняя часть рисунка соответствует фронтальной стороне, верхняя - задней. Для решения некоторых комбинаций, есть несколько формул, выделена та, которая по нашему мнению наиболее оптимальна.
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s3"><column><h2>Крестовые</h2>
+Эти формулы мы рекомендуем учить в первую очередь, сначала делаем крест, а потом применяем один из семи алгоритмов. </column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s4"><column><h3>Рыбки</h3></column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYXY-XYYYX-XYYXX-XXY.svg" height="150"></column>
+<column><b>R U R' U R U2' R'</b>
+y L' U2 L U L' U L
+y' R' U2' R U R' U R
+y2 L U L' U L U2 L'
+
+Движение U2 выполняем двумя разными пальцами, можно так же доучить с других сторон.</column>
+
+<column><img src="./Fridrich_method(OLL)/XXX-YXYYX-XYYYX-XXYXY-YXX.svg" height="150"></column>
+<column><b>R U2' R' U' R U' R'</b>
+y L' U' L U' L' U2 L
+y' R' U' R U' R' U2' R
+
+Если вам удобно выполнять левой рукой, то можно зеркалить, формула вторая</column>
+
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s5"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s6"><column><h3>Вертолет</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXY-YXYXX-XYYYX-YXYXX-XXY.svg" height="150"></column>
+<column><b>R U2' R2' U' R2 U' R2' U2 R</b>
+y2 L' U2 L2 U L2' U L2 U2 L'
+
+Очень быстрая формула, старайтесь не делать лишних перехватов.
+</column>
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s7"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s8"><column><h3>Глаза</h3></column>
+
+<column><img src="./Fridrich_method(OLL)/XXX-XYYYX-XYYYX-XXYXX-YXY.svg" height="150"></column>
+<column><b>R2 D R' U2' R D' R' U2' R'</b>
+y2 R2' D' R U2' R' D R U2' R
+
+Хорошо выучить обе формулы и делать с двух сторон
+</column>
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s9"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s10"><column><h3>Двойные глаза</h3></column>
+<column><img src="./Fridrich_method(OLL)/YXY-XXYXX-XYYYX-XXYXX-YXY.svg" height="150"></column>
+<column><b>R U2 R' U' R U R' U' R U' R'</b>
+y/y' R U R' U R U' R' U R U2' R'
+F R U R' U' R U R' U' R U R' U' F'
+
+Третья формула для ленивых, фронт, три пиф-пафа (R U R' U'), фронт обратно. Но первые две быстрее 
+</column>
+
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s11"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s12"><column><h3>Уши</h3></column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYYX-XYYYX-XXYYX-YXX.svg" height="150"></column>
+<column><b>Rw U R' U' Rw' F R F'</b>
+y2 R' F' Rw U R U' Rw' F
+y R U R D R' U' R D' R2'
+y R' F' R U R' U' R' F R U R
+y' R' U' R' D' R U R' D R2
+
+Напомним Rw это движение правых двух слоев кубика.</column>
+
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s13"><column><hr></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s14"><column><h3>Восьмерка</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXX-YXYYX-XYYYX-XYYXX-XXY.svg" height="150"></column>
+<column><b>F' Rw U R' U' Rw' F R</b>
+R2 D R' U R D' R' U' R'
+y R2 D' R U' R' D R U R
+y' F R' F' Rw U R U' Rw'
+
+Быстрая формула, старайтесь использовать минимум перехватов
+</column>
+
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s15"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s16"><column><h2>Угловые</h2>
+Случаи, когда правильно ориентированы угловые элементы, для распознавания очень легкие, достаточно только верхней стороны</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s17"><h3>Буква "H"</h3>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-XYYYX-XYXYX-XYX.svg" height="150"></column>
+<column><b>R U R' U' M' U R U' Rw'</b>
+y/y' R U R' U' M U R U' R' U' M'
+
+M' - движение среднего слоя кубика против часовой стрелки, выполняется мизинцем или безымянным пальцем
+</column>
+
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s18"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s19"><column><h3>Летающий змей</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXX-XYYYX-XYYXY-XYXYX-XYX.svg" height="150"></column>
+<column><b>Rw U R' U' Rw' R U R U' R'</b>
+y R' F' Rw U Rw' R U' L' U L
+y' Rw' U' R U M' U' R' U R
+
+Очень быстрая формула. Последние три движения в первой формуле просто загоняем пару на место (R U' R')
+</column>
+
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s20"><column><hr></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s21"><column><h3>Снежинка</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-YXYXY-XYXYX-XYX.svg" height="150"></column>
+<column><b>Rw' R U R U R' U' Rw R' M' U R U' Rw'</b>
+Rw U R' U' M2 U R U' R' U' M'
+
+Формулы достаточно похожи, попробуйте обе. Выбирайте ту которая удобнее и быстрее получается
+</column>
+
+<column></column>
+<column></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s22"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s23"><column><h3>Буквы «Т»</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-YXXYX-XYYYX-YXXYX-XYX.svg" height="150"></column>
+<column><b>F R U R' U' F'</b>
+y R' F' U' F U R'
+y2 F' L' U' L U F
+y2 Fw U R U' R' Fw'
+
+Очень простая формула и запомнить легко, фронт, пиф-паф (R U R' U'), фронт обратно. Старайтесь последнее движение делать большим пальцем правой руки</column>
+
+<column><img src="./Fridrich_method(OLL)/YYX-XXXYX-XYYYX-XXXYX-YYX.svg" height="150"></column>
+<column><b>R U R' U' R' F R F'</b>
+F R U' R' U R U R' F'
+R U R' F' U' F R U' R'
+y2 L' U' L U Rw U' Rw' F
+
+Делаем пиф-паф (R U R' U')и загоняем пару через фронт
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s24"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s25"><column><h2>Точечные</h2>
+Это группа формул в которой нету ориентированных ребер, как правило алгоритмы длинные)
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s26"><column><h3>Точки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-YXXXY-YXYXY-YXXXY-XYX.svg" height="150"></column>
+<column><b>R U2' R2' F R F' U2' R' F R F'</b>
+y R U' R2 D' Rw U' Rw' D R2 U R'
+
+Не забывайте выполнять U2 разными пальцами, пригодится умение загонять пару через фронт</column>
+
+
+<column><img src="./Fridrich_method(OLL)/XYX-YXXXY-YXYXY-XXXXX-YYY.svg" height="150"></column>
+<column><b>Rw' U' Rw U2' R' U2' R U2' Rw' U Rw</b>
+y2 Rw U Rw' U2' R U2' R' U2' Rw U' Rw'
+y F R U R' U' F' Fw R U R' U' Fw'
+
+Старайтесь не делать лишних перехватов.
+</column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s27"><column><hr></column>
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s28"><column><h3>Запятые</h3></column>
+<column><img src="./Fridrich_method(OLL)/YYX-XXXXY-YXYXY-XYXXX-XYY.svg" height="150"></column>
+<column><b>Rw' R2 U R' U Rw U2' Rw' U R' Rw</b>
+Rw' R U R' F2 R U L' U L Rw R'
+y' Fw R U R' U' Fw' U' F R U R' U' F'
+y' Fw R U R' U' Fw' R' F' U' F U R
+
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XYY-YXXXX-YXYXY-XXXYX-YYX.svg" height="150"></column>
+<column><b>Rw' R U' Rw U2 Rw' U' R U' R2 Rw</b>
+y F U R U' R' F' R' F' U' F U R
+y' Fw R U R' U' Dw' x R' F R U R' U' F'
+y' R' U2 R' F R F' U' F' U' F U' R
+
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s29"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s30"><column><h3>Микки Маусы</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-YXYXY-YXXXY-XYX.svg" height="150"></column>
+<column><b>Rw' R U R U R' U' Rw R2 F R F'</b>
+R' U2 F R U R' U' F2 U2 F R
+y2 F R' F' R U R U' R' U' F R U R' U' F'
+
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-YXYXY-XXXXX-YYY.svg" height="150"></column>
+<column><b>Rw U R' U R U2 Rw2 U' R U' R' U2 Rw</b>
+y R U2 R2 F R F' U2 Rw R' U R U' Rw'
+y' F R U' R' U' R U R' F' U' F R U R' U'F'
+
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s31"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s32"><column><h3>Диагональ</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYY-XYXXX-YXYXY-YXXYX-XYX.svg" height="150"></column>
+<column><b>R U R' U R' F R F' U2' R' F R F'</b>
+y2 F R' F' R2 Rw' U R U' R' U' M'
+y2 Rw U' Rw' F U2 F U' R U' R' F'
+
+
+</column>
+
+<column></column>
+<column></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s33"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s34"><column><h3>Палки</h3></column>
+<column><img src="./Fridrich_method(OLL)/YYX-XXXXY-XYYYX-XXXXY-YYX.svg" height="150"></column>
+<column><b>F U R U' R' U R U' R' F'</b>
+y R' U' R' F R F' R U' R' U2 R
+y2 Fw R U R' U' R U R' U' Fw'
+
+</column>
+<column><img src="./Fridrich_method(OLL)/YYY-XXXXX-XYYYX-XXXXX-YYY.svg" height="150"></column>
+<column><b>R' F R U R U' R2 F' R2 U' R' U R U R'</b>
+y/y' R U2 R2 U' R U' R' U2 F R F'
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s35"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s36"><column><h3>Палки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-YXXXY-XYYYX-YXXXY-XYX.svg" height="150"></column>
+<column><b>Rw' U' Rw U' R' U R U' R' U R Rw' U Rw</b>
+Rw U Rw' U R U' R' U R U' R' Rw U' Rw'
+
+</column>
+<column><img src="./Fridrich_method(OLL)/YYY-XXXXX-XYYYX-YXXXY-XYX.svg" height="150"></column>
+<column><b>y' R' F' U' F U' R U R' U R</b>
+F R U R' U y' R' U' R U' R'
+y R U R' U R U' B U' B' R'
+y R' U' R U' R' U F' U F R
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s37"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s38"><column><h3>Буквы Г</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-YXXYX-XYYYX-XXXXY-YYX.svg" height="150"></column>
+<column><b>Rw U Rw' R U R' U' Rw U' Rw'</b>
+y2 x' R U R' Rw U Rw' F' R U' Lw'
+y2 R' F R U R' U' F' R U' R' U2 R
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXXY-XYYYX-YXXXX-XYY.svg" height="150"></column>
+<column><b>y2 Rw' U' Rw R' U' R U Rw' U Rw</b>
+Lw' U' Lw L' U' L U R' F R
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s39"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s40"><column><h3>Буквы Г</h3></column>
+<column><img src="./Fridrich_method(OLL)/YYX-XXXYX-XYYYX-YXXXX-XYY.svg" height="150"></column>
+<column><b>y2 F U R U' R2 F' R U R U' R'</b>
+Lw U' R' F' R U R' U' F U x
+Fw R U R2 U' R' U R U' Fw'
+y2 Rw U' Rw' U' Rw U Rw' F' U F
+
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XYY-XYXXX-XYYYX-XXXXY-YYX.svg" height="150"></column>
+<column><b>Rw' U Rw U Rw' U' Rw B U' B'</b>
+y2 R' F R U R' F' R F U' F'
+y2 F' U' Rw' F Rw2 U Rw' U' L' U L
+
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s41"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s42"><column><h3>Скобки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-YXXXY-XYYYX-XYXYX-XYX.svg" height="150"></column>
+<column><b>R U R2 U' R' F R U R U' F'</b>
+R U R' U' y R' F' Rw U Rw' R
+R U R' U' x D' R' U R U' D x'
+y2 F R U R' U' R' F' Rw U R U' Rw'
+
+</column>
+<column><img src="./Fridrich_method(OLL)/YYY-XXXXX-XYYYX-XYXYX-XYX.svg" height="150"></column>
+<column><b>y R' U' R' F R F' U R</b>
+y R U x' R U' R' U x U' R'
+y' L' U' Rw' U L U' F Rw
+y' L U Rw U' Rw' F U' L'
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s43"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s44"><column><h3>Пропеллеры</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYY-XYXXX-XYYYX-YXXYX-XYX.svg" height="150"></column>
+<column><b>R' F R U R' U' F' U R</b>
+y2 Rw' U Rw U Rw' F' U' F Rw
+y2 L' U' L F U F' U' L' U2 L
+
+</column>
+<column><img src="./Fridrich_method(OLL)/YYX-XXXYX-XYYYX-XYXXY-XYX.svg" height="150"></column>
+<column><b>y2 R U R' F' U' F U R U2 R'</b>
+L F' L' U' L U F U' L'
+y2 R B' R' U' R U B U' R'
+
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s45"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s46"><column><h3>Квадраты</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXX-YXYYX-YXYYX-XXXXY-YYX.svg" height="150"></column>
+<column><b>Rw U2 R' U' R U' Rw'</b>
+y2 Lw U2 L' U' L U' Lw'
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XXX-XYYXY-XYYXY-YXXXX-XYY.svg" height="150"></column>
+<column><b>y2 Rw' U2 R U R' U Rw</b>
+R' F2 Rw U Rw' F R
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s47"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s48"><column><h3>Галстуки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXY-XYYXX-XYYXY-YXXYX-XYX.svg" height="150"></column>
+<column><b>y2 R U2' R2 F R F' R U2' R'</b>
+y R' U2 Lw R U' R' U Lw' U2 R
+y R' U' F R' F' R2 U' R' U2 R
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XXX-XYYXY-XYYXY-XXXYX-YYX.svg" height="150"></column>
+<column><b>F R U' R' U' R U R' F'</b>
+F R' F' R U R U' R'
+y' R U R' F' U F R U' R'
+
+Если вы знаете формулу копье, то это как раз ее начало. Формула 2 так же  очень быстрая
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s49"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s50"><column><h3>Буквы М</h3></column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYYX-XYYXY-XYXXY-XYX.svg" height="150"></column>
+<column><b>R U R' U R U' R' U' R' F R F'</b>
+y2 R U R' U F' U F U2 R U' R'
+y2 R U2 R2 F2 Rw U L' U2 R U'
+
+Начало с рыбки, протолкнули ребро, вернули пару, загнали через фронт
+</column>
+<column><img src="./Fridrich_method(OLL)/XXY-XYYXX-YXYYX-YXXYX-XYX.svg" height="150"></column>
+<column><b>L' U' L U' L' U L U Rw U' Rw' F</b>
+y' R U R2' F' U' F U R2 U2' R'
+y2 R' U' R U' R' U R U x' R U' R' U x
+
+Тоже самое но левой рукой, но если вы предпочитаете правой, то второй алгоритм
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s51"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s52"><column><h3>Рюмки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXY-YXYXX-XYYXY-XXXYX-YYX.svg" height="150"></column>
+<column><b>R U R' U' R' F R2 U R' U' F'</b>
+y R' U' R U' R' U R' F R F' U R
+y F' U' F Rw U' Rw' U Rw U Rw'
+
+Пиф-паф, загоняем через фронт, укорачиваем Тшку
+</column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYXY-YXYYX-XYXXX-XYY.svg" height="150"></column>
+<column><b>y2 R U R' U R' F R F' R U2' R'</b>
+Rw U R' U R U' R' U' Rw' R U R U' R'
+y R U R' U F' U F U' R U2 R'
+y' Rw R2 U2 R U R' U R U Rw' R
+
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s53"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s54"><column><h3>Молнии</h3></column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYXY-XYYXY-XYXXX-XYY.svg" height="150"></column>
+<column><b>Rw U R' U R U2 Rw'</b>
+F R' F' R U2 R U2 R'
+y2 Lw U L' U L U2 Lw'
+
+Молниеносная формула
+</column>
+<column><img src="./Fridrich_method(OLL)/XXY-YXYXX-YXYYX-XXXYX-YYX.svg" height="150"></column>
+<column><b>R U2 R' U2 R' F R F'</b>
+R' F' Rw U' Rw' F2 R
+y2 Rw' U' R U' R' U2 Rw
+
+Начало с рыбки,U2, загнали пару через фронт
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s55"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s56"><column><h3>Молнии</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXY-YXYXX-XYYXY-XYXXY-XYX.svg" height="150"></column>
+<column><b>y Rw R2 U' R U' R' U2 R U' Rw' R</b>
+y' Rw' R U2 R' U' R U' R' U2 R U M'
+y2 F R U R' U' F' U F R U R' U' F'
+
+Первая очень быстрая, четвертая легкая для запоминания
+</column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYXY-YXYYX-YXXYX-XYX.svg" height="150"></column>
+<column><b>Rw R' U R U R' U R U2 R' U Rw' R</b>
+y Rw' R2 U R' U R U2 R' U M'
+y' Rw U R' U R' F R F' R U2 Rw'
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s57"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s58"><column><h3>Мягкие знаки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXXY-XYYXY-XYYXY-XXX.svg" height="150"></column>
+<column><b>y R' U' F' U F R</b>
+B' U' R' U R B
+Fw' L' U' L U Fw
+y2 R' U' F R' F' R U R
+
+</column>
+<column><img src="./Fridrich_method(OLL)/XYX-YXXYX-YXYYX-YXYYX-XXX.svg" height="150"></column>
+<column><b>y2 F U R U' R' F'</b>
+Fw R U R' U' Fw'
+y F U R' F R F' U' F'
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s59"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s60"><column><h3>Мягкие знаки</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYY-XYXXX-XYYXY-XYYXX-XXY.svg" height="150"></column>
+<column><b>y2 R' U' F U R U' R' F' R</b>
+R' F R U R' U' F2 U F R
+Rw' F' U F Rw U' Rw' U' Rw
+y F R' F' R U R U R' U' R U' R'
+
+Первая очень быстрая, четвертая легкая для запоминания
+</column>
+<column><img src="./Fridrich_method(OLL)/YYX-XXXYX-YXYYX-XXYYX-YXX.svg" height="150"></column>
+<column><b>R U B' U' R' U R B R'</b>
+S R U R' U' R' F R Fw'
+y R U2 R2 U' F' U F R2 U' R'
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s61"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s62"><column><h3>Петухи</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-YXYYX-XXYXX-YXY.svg" height="150"></column>
+<column><b>y2 R U R' U R U2 R' F R U R' U' F'</b>
+R U' R' U2 R U B U' B' U' R'
+y' R U R' U R U' R' U R U' R' U' R' F R F'
+
+Для легкого запоминания, Рыбка (R U R' U R U2' R') +Тшка
+</column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-XYYXY-XXYXX-YXY.svg" height="150"></column>
+<column><b>R' U' R U' R' U2 R F R U R' U' F'</b>
+y2 R' U R U2 R' U' F' U F U R
+
+Для легкого запоминания, новая Рыбка (R' U' R U' R' U2' R) +Тшка
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s63"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s64"><column><h3>Петухи</h3></column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-YXYYX-YXYXY-XXX.svg" height="150"></column>
+<column><b>y2 F R' F R2 U' R' U' R U R' F2</b>
+Fw R U R2 U' R' U R2 U' R' Fw'
+R2' U R' B' R U' R2' U R B R'
+y' R' F' Rw U' Rw' F2 R2 U R' U R U2 R'
+
+Старайтесь выполнять все двойные движения двумя разными пальцами
+</column>
+<column><img src="./Fridrich_method(OLL)/XYX-XYXYX-XYYXY-YXYXY-XXX.svg" height="150"></column>
+<column><b>y R U R' U' R U' R' F' U' F R U R'</b>
+Rw2 D' Rw U Rw' D Rw2 U' Rw' U' Rw
+y R' U2 R2 U R' U' R' U2 F R F'
+
+Начало пиф-паф... и продолжаем
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s65"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s66"><column><h3>Стелсы</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXY-YXYXX-XYYXY-YXXXX-XYY.svg" height="150"></column>
+<column><b>F R U R' U' R U R' U' F'</b>
+y2 Fw U R U' R' U R U' R' Fw'
+
+Фронт, два пиф-пафа (R U R' U'), фронт обратно
+</column>
+<column><img src="./Fridrich_method(OLL)/YXX-XXYXY-YXYYX-XXXXY-YYX.svg" height="150"></column>
+<column><b>F' L' U' L U L' U' L U F</b>
+y' F U R U' R' F' R U R' U R U2 R'
+
+Если у вас быстро идут формулы левой рукой, тогда первый вариант. Если любите "праворукие" тогда второй
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s67"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s68"><column><h3>Стелсы</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXX-YXYXY-YXYYX-YXXXY-XYX.svg" height="150"></column>
+<column><b>Rw U R' U R U' R' U R U2' Rw'</b>
+y' Rw U2 R' U' R U R' U' R U' Rw'
+
+Два слоя от себя, формула, возвращаем
+</column>
+<column><img src="./Fridrich_method(OLL)/YXY-XXYXX-YXYYX-XXXXX-YYY.svg" height="150"></column>
+<column><b>y Rw' U' R U' R' U R U' R' U2 Rw</b>
+y2 Rw' U2 R U R' U' R U R' U Rw
+y' F R U R' U' R U' R' U R U R' F'
+
+Зеркальная предыдущей, похожее выполнение, только больше через заднюю грань
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s69"><column><hr></column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/oll/s70"><column><h3>Стелсы</h3></column>
+<column><img src="./Fridrich_method(OLL)/XXY-YXYXX-YXYYX-YXXXX-XYY.svg" height="150"></column>
+<column><b>Rw U' Rw2 U Rw2 U Rw2 U' Rw</b>
+y R' U2' R U R' U R F R U R' U' F'
+y' F R' F2 R U2 R U2 R' F
+
+Очень быстрая формула
+</column>
+<column><img src="./Fridrich_method(OLL)/XXX-YXYXY-YXYYX-XXXXX-YYY.svg" height="150"></column>
+<column><b>y Rw' U Rw2 U' Rw2 U' Rw2 U Rw'</b>
+R U2 R' U' R U' R' F R U R' U' F'
+
+Зеркальная ситуация, выполняется очень похоже
+</column></data>
+				</section>
+				
+				
+			</content>
+			
+			
+			
+		</page>
+		
+	
+	
+
+
+<link rel="stylesheet" href="./Fridrich_method(OLL)/editable.css">
+<iframe style="display: none;" src="./Fridrich_method(OLL)/saved_resource(2).html"></iframe></body></html>

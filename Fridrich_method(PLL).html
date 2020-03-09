@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./Fridrich_method(PLL)/template.css">
+		<link rel="icon" href="img/logo.png">
+		<script async="" src="./Fridrich_method(PLL)/analytics.js.Без названия"></script><script src="./Fridrich_method(PLL)/runtime.js.Без названия"></script>
+		<title>CUBE</title>
+
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-21735281-3', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+		
+	<script src="./Fridrich_method(PLL)/embed.js.Без названия" data-timestamp="1583683054603"></script><script src="./Fridrich_method(PLL)/jquery.min.js.Без названия"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.91790a929b2fba6bf8967d2204d948d5.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.b9167d06dc7bd01b59d6d6332d6aafa1.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.3e35597ccafc421f5ee35c2229110d93.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"></head>
+	
+	<body>
+		
+		<page>
+			
+			<header>
+				
+				<a href="index.html" class="logo"><img src="img/128976.png"></a>
+				
+				
+				
+			</header>
+			
+			<content>
+				
+				
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s1"><column><h1>Permutation of the Last Layer (PLL)</h1>
+
+Permutation of the Last Layer переводится как перестановка в последнем слое, то есть как из желтой шапки за один алгоритм получить собранный куб. Количество вариантов, которые вам придется выучить = 21.
+Для каждого случая может быть более чем один вариант решения, либо не один вариант начального расположения кубика. 
+
+На всех рисунках изображен вид сверху, т.е. как мы видим желтую сторону сверху. Нижняя часть рисунка соответствует фронтальной стороне, верхняя - задней.
+
+Чтобы у тех, кто только начинает учить ПЛЛ, не разбегались глаза (конечно, все эти случаи для каждого алгоритма учить не надо), мы выделили жирным самые популярные и используемые в скоростной сборке случаи. Для тех, кто не хочет заморачиваться, а выучить просто 21 алгоритм ПЛЛ, учите алгоритмы, выделенные жирным. А впоследствии Вы, может быть, начнете разбирать случаи с других сторон, другие выполнения и т.д.</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s2"><column><h3>Буква T (T-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/OOG-BYYYR-GYYYB-BYYYO-RRG.svg" class="left" height="150">
+<b>R U R' U' R' F R2 U' R' U' R U R' F'</b>
+(Dw2) R U R' U' R' F R2 U' R' U F' L' U L
+
+Очень хорошая и быстрая формула, учите первый вариант и точно не ошибетесь)
+</column>
+
+<column><h3>Копьё (Y-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/RBO-GYYYG-OYYYG-BYYYB-RRO.svg" class="left" height="150">
+<b>F R U' R' U' R U R' F' R U R' U' R' F R F'</b>
+F R' F R2 U' R' U' R U R' F' R U R' U' F'
+
+Старайтесь выполнять последнее движение в этой формуле (F') большим пальцем правой руки.
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s3"><column><h3>Треугольники сторон (U-perms)</h3>
+
+<img src="./Fridrich_method(PLL)/RRR-GYYYB-OYYYG-GYYYB-OBO.svg" class="left" height="150">
+<b>R U' R U R U R U' R' U' R2</b>
+M2 U M U2 M' U M2
+U2 R U R' U R' U' R2 U' R' U R' U R
+y2 R2 U' R' U' R U R U R U' R
+
+Выполняется перестановка трех ребер против часовой стрелки, можно так же выполнять через M слой или доучить с других сторон
+</column>
+<column>
+
+
+<img src="./Fridrich_method(PLL)/RRR-GYYYB-BYYYO-GYYYB-OGO.svg" class="left" height="150">
+<b>R2' U R U R' U' R3 U' R' U R'</b>
+R2 U R U R' U' R' U' R' U R'
+M2 U' M U2 M' U' M2
+y2 R' U R' U' R' U' R' U R U R2
+y2 M2 U' M' U2 M U' M2
+
+В первом варианте используется специальное движение R3 для скорости, выполняется следующим образом R2 вы делаете обычно, а остальное движение (R) докручиваете указательным, отпуская большой. Если не получится натренировать первую, то без проблем можете брать вторую формулу. 
+</column>
+
+</data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s4"><column><h3>Крест сторон (H-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/ORO-BYYYG-GYYYB-BYYYG-ROR.svg" class="left" height="150">
+<b>M2 U' M2 U2' M2 U' M2</b>
+M2 U M2 U2 M2 U M2
+
+Важно для скорости выполнять M2 двумя разными пальцами, сначала может будет чуть неудобно, но потом очень быстро будет идти алгоритм. Если вам удобно делать M2 правой рукой, тогда первая формула, если левой, то вторая.
+</column>
+
+<column><h3>Саночки (Z-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/OBO-BYYYG-OYYYR-BYYYG-RGR.svg" class="left" height="150">
+<b> y/y' M2 U' M2 U' M' U2' M2 U2' M' U2 </b>
+M2 U M2 U M' U2 M2 U2 M'
+U' M' U M2 U M2 U M' U2 M2
+U2 M' U2 M2 U2 M' U' M2 U' M2
+M2' U2 M' U' M2' U' M2' U' M' U
+
+Не забывайте выполнять M2 двумя разными пальцами.  Если вам удобно делать M2 правой рукой, тогда первая формула, если левой, то вторая.
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s5"><column><h3>Треугольники углов (A-perms)</h3>
+
+<img src="./Fridrich_method(PLL)/GOG-OYYYR-BYYYG-BYYYB-RRO.svg" class="left" height="150">
+
+<b>Lw' U R' D2 R U' R' D2 R2</b>
+y x' R2 D2 R' U' R D2 R' U R'
+y' Rw L D2 L' U' L D2 L' U L'
+y' x' U' R U' L2 U R' U' L2 U
+
+Для скорости движение D2 выполняется двумя разными пальцами последовательно. Например, безымянный, а потом мизинец
+</column>
+<column>
+
+
+<img src="./Fridrich_method(PLL)/BGO-RYYYG-OYYYR-OYYYG-BBR.svg" class="left" height="150">
+
+<b>x R2 D2 R U R' D2 R U' R</b>
+y Lw U' R D2 R' U R D2 R2
+y' Rw U' L D2 L' U L D2 L2
+ 
+Формула очень напоминает предыдущую, только здесь углы переставляются против часовой стрелки. Так же рекомендуем движение D2 выполнять двумя разными пальцами последовательно
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s6"><column><h3>Лямбды (J-perms)</h3>
+
+<img src="./Fridrich_method(PLL)/OOG-BYYYR-BYYYR-BYYYO-RGG.svg" class="left" height="150">
+
+<b>R U R' F' R U R' U' R' F R2 U' R' U'</b>
+R U2 R' U' R U2 L' U R' U' L
+y R U' L U2 R' U R U2 R' L' U
+y2 R' z R U R' D R2 U' R U R2 U'
+
+Простая и быстрая формула
+</column>
+<column>
+
+
+<img src="./Fridrich_method(PLL)/RBB-GYYYO-GYYYR-GYYYR-OOB.svg" class="left" height="150">
+
+<b>R' U2' R U R' z R2 U R' D R U'</b>
+U' R' U L' U2 R U' R' U2 R L
+L U' R' U L' U2 R U' R' U2 R
+x U2 Rw' U' Rw U2 Lw' U R' U' R2
+
+Несмотря на то что есть перехват, формула очень быстрая 
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s7"><column><h3>Параллельный перенос (F-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/BGO-RYYYG-RYYYO-RYYYB-GBO.svg" class="left" height="150">
+
+<b>R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</b>
+U' R' U R U' R2 F' U' F U R F R' F' R2
+y R' U2 R' U' y R' F' R2 U' R' U R' F R U' F
+y' R' U R U' R2' F' U' F U R U' Lw R U' R' U
+
+Старайтесь не делать лишних перехватов
+</column>
+<column><h3>Летающая тарелка (V-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/RGO-GYYYG-BYYYO-BYYYB-RRO.svg" class="left" height="150">
+
+<b>R' U R' U' y R' F' R2 U' R' U R' F R F</b>
+R' U2 R U2 L U' R' U L' U L U' R U L'
+y F' U F' U' R' F' R2 U' R' U R' F R F
+
+
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s8"><column><h3>Семерки (R-perms)</h3>
+
+<img src="./Fridrich_method(PLL)/GOB-OYYYO-RYYYG-BYYYG-RBR.svg" class="left" height="150">
+
+<b>y R U R' F' R U2 R' U2 R' F R U R U2 R'</b>
+y R U' R' U' R U R D R' U' R D' R' U2 R'
+L U2 L' U2 L F' L' U' L U L F L2
+
+Если у вас быстро идут формулы через D, то можете попробовать второй вариант
+</column>
+
+<column>
+
+
+<img src="./Fridrich_method(PLL)/BRG-RYYYR-GYYYO-GYYYB-OBO.svg" class="left" height="150">
+
+<b>R' U2' R U2' R' F R U R' U' R' F' R2</b>
+R' U2 R' D' R U' R' D R U R U' R' U' R
+y R2 F R U R U' R' F' R U2' R' U2' R
+
+Если у вас быстро идут формулы через D, то можете попробовать второй вариант. Не забывайте двойные движения выполнять разными пальцами.
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s9"><column><h3>Терминатор (E-perm)</h3>
+
+<img src="./Fridrich_method(PLL)/RBO-GYYYG-RYYYO-BYYYB-RGO.svg" class="left" height="150">
+<b>x' R U' R' D R U R' D' R U R' D R U' R' D'</b>
+R' U' R' D' R U' R' D R U R' D' R U R' D R2
+R' U2 R' D' R U R' D R U' R' D' R U2 R' D R2
+
+Этот алгоритм для терминатора используют все ведущие спидкуберы мира. Сложность состоит только в ходах D', чтобы было быстро, этот ход нужно выполнять толкающим движением левого безымянного пальца.
+</column>
+
+<column>Совет: учите формулы постепенно. Возьмите несколько штук и пробуйте их реализовать. Не учите сразу все варианты, а попробуйте выбрать для себя один оптимальный, который вам будет делать легче всего.</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s10"><column><h3>Буквы X (N-perms)</h3>
+
+<img src="./Fridrich_method(PLL)/OOR-BYYYB-GYYYB-GYYYG-ORR.svg" class="left" height="150">
+
+<b>R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</b>
+z R U R' D R2 U' R D' U R' D R2 U' R D'
+R U' R' U Lw U F U' R' F' R U' R U Lw' U R'
+R U R' U' L U2 L' U' L U2 R' U L' U' R U R U' R'
+
+Формула длинная, но очень легко можно запомнить так: начало с рыбки (R U R' U) дальше Лямбда R U R' F' R U R' U' R' F R2 U' R' дальше мы делаем U2 и загоняем пару R U' R'
+</column>
+<column>
+
+
+<img src="./Fridrich_method(PLL)/ROO-GYYYG-GYYYB-BYYYB-RRO.svg" class="left" height="150">
+
+<b>R' U R U' R' F' U' F R U R' F R' F' R U' R</b>
+R' U R' F R F' R U' R' F' U F R U R' U' R
+R' U L' U2 R U' R' L U L' U2 R U' L U
+L' U R' z R2 U R' U' D R D' R2 U R' z' R
+
+Сложная формула, но у вас все получится 
+</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s11"><column><h3>Восьмерки (G-perms)</h3>
+
+<img src="./Fridrich_method(PLL)/BRO-RYYYG-GYYYO-OYYYG-BBR.svg" class="left" height="150">
+
+<b>R2' F2 R U2 R U2' R' F R U R' U' R' F R2</b>
+y2 R2' Uw' R U' R U R' Uw R2 B U' B'
+y2 R2 U' R U' R U R' U R2 D' U R U' R' D U'
+y2 D R2 U' R U' R U R' U R2 D' U R U' R' U'</column>
+
+<column>
+
+
+<img src="./Fridrich_method(PLL)/ROR-GYYYB-RYYYG-OYYYO-BBG.svg" class="left" height="150">
+
+<b>R2' F' R U R U' R' F' R U2' R' U2' R' F2 R2</b>
+y' R U R' y' R2 Uw' R U' R' U R' Uw R2
+y' R U R' U' D R2 U' R U' R' U R' U R2 U D'
+y2 Fw R Fw' R2 Uw' R U' R' U R' Uw R2</column></data>
+				</section>
+				
+				<section class="columns">
+					<data id="/howto/fridrich/pll/s12"><column><img src="./Fridrich_method(PLL)/ORG-BYYYR-OYYYB-BYYYO-RGG.svg" class="left" height="150">
+
+<b>R2 Uw R' U R' U' R Uw' R2 y' R' U R</b>
+L2 F2 L' U2 L' U2 L F' L' U' L U L F' L2
+y' U D' R2 U R' U R' U' R U' R2 D U' R' U R
+
+Несмотря на перехват, формула достаточно быстрая и легкая
+</column>
+
+<column><img src="./Fridrich_method(PLL)/ROR-GYYYB-BYYYR-OYYYO-BGG.svg" class="left" height="150">
+
+<b>F' U' F R2 Uw R' U R U' R Uw' R2'</b>
+U' D R' U' R U D' R2 U R' U R U' R U' R2
+y' R' Dw' F R2 Uw R' U R U' R Uw' R2'</column></data>
+				</section>
+				
+			</content>
+			
+			
+			
+			
+		</page>
+		
+	
+	
+
+<link rel="stylesheet" href="./Fridrich_method(PLL)/editable.css">
+<iframe style="display: none;" src="./Fridrich_method(PLL)/saved_resource(2).html"></iframe></body></html>
